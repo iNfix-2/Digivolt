@@ -2,46 +2,17 @@
   RewriteEngine On
   RewriteBase /
 
-  # 0. Allow cPanel AutoSSL and Let's Encrypt validation files to pass through untouched
-  RewriteCond %{REQUEST_URI} ^/\.well-known/acme-challenge/ [NC,OR]
-  RewriteCond %{REQUEST_URI} ^/\.well-known/pki-validation/ [NC]
-  RewriteRule ^ - [L]
+  # 1. Bypass AutoSSL / Let's Encrypt validation checks
+  RewriteRule ^\.well-known/ - [L]
 
-  # 1. Force HTTPS (strictly bypassing ACME SSL validation)
-  RewriteCond %{HTTPS} off
-  RewriteCond %{REQUEST_URI} !^/\.well-known/ [NC]
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-  # 2. Allow existing physical files, directories, or assets to be served directly
+  # 2. Serve existing files and directories directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # 3. Fallback all client-side routes to index.html for React SPA
-  RewriteCond %{REQUEST_URI} !^/\.well-known/ [NC]
-  RewriteRule ^ index.html [L]
-</IfModule>
+  # 3. Prevent infinite rewrite recursion loops
+  RewriteRule ^index\.html$ - [L]
 
-# Security & Caching Headers (guarded with IfModule)
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set X-Frame-Options "SAMEORIGIN"
-  Header set X-XSS-Protection "1; mode=block"
-
-  # Immutable caching for hashed assets
-  <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
-    Header set Cache-Control "max-age=31536000, public, immutable"
-  </FilesMatch>
-
-  # Prevent caching of index.html so code updates show immediately
-  <FilesMatch "(index\.html|sw\.js)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires 0
-  </FilesMatch>
-</IfModule>
-
-# Gzip Compression (guarded with IfModule)
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
+  # 4. Fallback for React Single Page App
+  RewriteRule . /index.html [L]
 </IfModule>
