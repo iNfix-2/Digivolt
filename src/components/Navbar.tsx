@@ -184,9 +184,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           },
         },
       ],
-      image:
-        'https://lh3.googleusercontent.com/v-nEn2qP2bc7jpXSbAG2YRQdi8JCo8vax4HPO9qxkjxuITxPAKinVAXd5lIIu0BagL_PGQQ6jyz-4WL01DctVvEX9EhlQpXajrxwW3Y=s0-e365',
-      imageAlt: 'DigiVolt passenger support and customer care',
+      image: '/campaign/digivolt-support-apps.png',
+      imageAlt: 'DigiVolt app on Google Play and Apple App Store',
     },
   };
 
