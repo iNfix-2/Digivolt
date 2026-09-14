@@ -63,15 +63,15 @@ export const AlternatingGrid: React.FC<AlternatingGridProps> = ({
             >
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-black dark:text-white mb-4 font-semibold">
                 <ShieldCheck className="w-4 h-4 text-black dark:text-white" />
-                <span>Vetted Chauffeur Standards</span>
+                <span>Vetted Driver Standards</span>
               </div>
 
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-black leading-[1.05] mb-6">
-                Professional chauffeurs. 5-star standard every time.
+                Professional drivers. 5-star standard every time.
               </h2>
 
               <p className="text-lg sm:text-xl text-gray-600 font-light leading-relaxed mb-8 max-w-xl">
-                Every DigiVolt chauffeur undergoes comprehensive background checks, defensive-driving certification, and continuous safety telemetry scoring to guarantee a smooth, safe, and dependable journey.
+                Every DigiVolt driver undergoes comprehensive background checks, defensive-driving certification, and continuous safety telemetry scoring to guarantee a smooth, safe, and dependable journey.
               </p>
 
               <button

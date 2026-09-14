@@ -34,7 +34,7 @@ export const RidesSafetyStats: React.FC = () => {
 
             <div className="lg:col-span-5">
               <p className="text-lg sm:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
-                Our 100% all-electric vehicle fleet has completed over 100 million zero-emission miles. Paired with rigorously vetted professional chauffeurs, DigiVolt offers unmatched safety and environmental responsibility.
+                Our 100% all-electric vehicle fleet has completed over 100 million zero-emission miles. Paired with rigorously vetted professional drivers, DigiVolt offers unmatched safety and environmental responsibility.
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export const RidesSafetyStats: React.FC = () => {
           >
             <div>
               <h3 className="text-2xl font-bold tracking-tight text-black dark:text-white mb-4">
-                Rigorously Vetted Chauffeurs
+                Rigorously Vetted Drivers
               </h3>
               <p className="text-base text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
                 Every driver undergoes comprehensive criminal and background screening, continuous DMV monitoring, in-person hospitality and safety training, and adherence to zero-tolerance policies.

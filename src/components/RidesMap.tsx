@@ -331,7 +331,7 @@ export const RidesMap: React.FC = () => {
               Serving Riders In
             </h3>
             <p className="text-xs text-neutral-600 dark:text-gray-400 mb-6 font-normal">
-              100% electric rides with professional vetted chauffeurs are open to the general public right now. Download the DigiVolt One app.
+              100% electric rides with professional vetted drivers are open to the general public right now. Download the DigiVolt One app.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {servingList.map((city) => (
@@ -363,7 +363,7 @@ export const RidesMap: React.FC = () => {
               Up Next
             </h3>
             <p className="text-xs text-neutral-600 dark:text-gray-400 mb-6 font-normal">
-              Fleet electrification, rapid charging hubs, and chauffeur onboarding are underway in these expansion metros.
+              Fleet electrification, rapid charging hubs, and driver onboarding are underway in these expansion metros.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-h-[380px] overflow-y-auto pr-2">
               {upNextList.map((city) => (

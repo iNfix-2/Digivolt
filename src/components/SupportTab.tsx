@@ -28,12 +28,12 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
     {
       category: 'booking',
       q: 'How do I book an electric ride with DigiVolt?',
-      a: 'You can book your ride instantly using the DigiVolt mobile app on iOS or Android. Simply enter your destination, choose your pickup spot, see the upfront fare and estimated arrival time, and tap "Request Car". You will be matched with a vetted chauffeur within seconds.',
+      a: 'You can book your ride instantly using the DigiVolt mobile app on iOS or Android. Simply enter your destination, choose your pickup spot, see the upfront fare and estimated arrival time, and tap "Request Car". You will be matched with a vetted driver within seconds.',
     },
     {
       category: 'booking',
       q: 'Can I schedule a DigiVolt ride in advance?',
-      a: 'Yes! You can reserve your electric ride up to 7 days in advance. Perfect for early morning airport transfers or critical business meetings. Your scheduled EV and chauffeur are locked in with guaranteed arrival.',
+      a: 'Yes! You can reserve your electric ride up to 7 days in advance. Perfect for early morning airport transfers or critical business meetings. Your scheduled EV and driver are locked in with guaranteed arrival.',
     },
     {
       category: 'booking',
@@ -58,22 +58,22 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
     {
       category: 'payment',
       q: 'What is DigiVolt’s cancellation and refund policy?',
-      a: 'You can cancel any trip free of charge within 5 minutes of booking, or anytime if your chauffeur is delayed beyond the estimated arrival window. For cancellation queries or fare adjustments, our support desk resolves disputes within 24 hours.',
+      a: 'You can cancel any trip free of charge within 5 minutes of booking, or anytime if your driver is delayed beyond the estimated arrival window. For cancellation queries or fare adjustments, our support desk resolves disputes within 24 hours.',
     },
     {
       category: 'safety',
       q: 'Who drives DigiVolt vehicles and how are they vetted?',
-      a: 'Every DigiVolt ride is operated by a certified, professionally vetted chauffeur. Drivers undergo multi-tiered criminal background screening, state motor vehicle record audits, in-person hospitality training, and defensive EV operation certification.',
+      a: 'Every DigiVolt ride is operated by a certified, professionally vetted driver. Drivers undergo multi-tiered criminal background screening, state motor vehicle record audits, in-person hospitality training, and defensive EV operation certification.',
     },
     {
       category: 'safety',
       q: 'Can I share my live trip status with family or colleagues?',
-      a: 'Yes. Every active ride in the DigiVolt app includes a one-tap "Share Trip" feature. This generates an encrypted live tracking link showing your vehicle route, chauffeur identity, vehicle license plate, and real-time ETA.',
+      a: 'Yes. Every active ride in the DigiVolt app includes a one-tap "Share Trip" feature. This generates an encrypted live tracking link showing your vehicle route, driver identity, vehicle license plate, and real-time ETA.',
     },
     {
       category: 'lost',
       q: 'What should I do if I leave an item behind in a DigiVolt vehicle?',
-      a: 'If you forgot a phone, bag, or personal item, use the "Trip History > Lost Item" button in the app or email support@digivolt.com immediately with your trip time and pickup location. Our dispatch team contacts your chauffeur directly to secure and safely return your property.',
+      a: 'If you forgot a phone, bag, or personal item, use the "Trip History > Lost Item" button in the app or email support@digivolt.com immediately with your trip time and pickup location. Our dispatch team contacts your driver directly to secure and safely return your property.',
     },
   ];
 
@@ -97,7 +97,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-black dark:text-white leading-[1.05] sm:leading-[1.0] mb-6">
             Here to help you ride with <span className="text-black dark:text-white">complete confidence</span>.
           </h1>
-          <p className="text-lg sm:text-2xl text-neutral-700 dark:text-neutral-300 font-light leading-relaxed mb-8 sm:mb-10 max-w-3xl">
+          <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-neutral-300 font-normal leading-relaxed mb-8 sm:mb-10 max-w-3xl">
             Have questions about booking, payments, or safety? Explore our frequently asked questions, read our terms of service and passenger policies, or connect directly with our 24/7 support desk.
           </p>
         </div>
@@ -205,7 +205,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-neutral-600 dark:text-neutral-300 text-base font-light mb-8">
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal mb-8 leading-relaxed">
               Find quick answers to common questions about booking, payments, electric vehicles, and rider guidelines.
             </p>
 
@@ -320,7 +320,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
                 1. Acceptance of Terms & Service Scope
               </h3>
               <p>
-                By downloading, accessing, or utilizing the DigiVolt mobile application, website, or ride-hailing services, you agree to be legally bound by these Terms & Conditions. DigiVolt provides zero-emission, on-demand electric passenger transportation facilitated by certified professional chauffeurs. If you do not accept these terms in full, you may not use our platforms.
+                By downloading, accessing, or utilizing the DigiVolt mobile application, website, or ride-hailing services, you agree to be legally bound by these Terms & Conditions. DigiVolt provides zero-emission, on-demand electric passenger transportation facilitated by certified professional drivers. If you do not accept these terms in full, you may not use our platforms.
               </p>
             </div>
 
@@ -347,7 +347,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
                 4. Cancellation & No-Show Policies
               </h3>
               <p>
-                Riders may cancel any requested ride without penalty within five (5) minutes of chauffeur dispatch. Cancellations occurring after five minutes, or instances where a passenger fails to arrive at the designated pickup zone within 5 minutes of vehicle arrival, may be subject to a nominal cancellation fee to fairly compensate the driver.
+                Riders may cancel any requested ride without penalty within five (5) minutes of driver dispatch. Cancellations occurring after five minutes, or instances where a passenger fails to arrive at the designated pickup zone within 5 minutes of vehicle arrival, may be subject to a nominal cancellation fee to fairly compensate the driver.
               </p>
             </div>
 
@@ -365,7 +365,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
                 6. Safety & Passenger Conduct
               </h3>
               <p>
-                Every passenger must wear seatbelts at all times during transit. The maximum vehicle occupancy is strictly capped at four (4) passengers. DigiVolt reserves the right to immediately terminate any ride without refund if a passenger exhibits unruly, abusive, or hazardous behavior toward the chauffeur or fellow riders.
+                Every passenger must wear seatbelts at all times during transit. The maximum vehicle occupancy is strictly capped at four (4) passengers. DigiVolt reserves the right to immediately terminate any ride without refund if a passenger exhibits unruly, abusive, or hazardous behavior toward the driver or fellow riders.
               </p>
             </div>
 
@@ -392,7 +392,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
               Rider & Service Policies
             </h2>
-            <p className="text-neutral-600 dark:text-neutral-300 text-base font-light">
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal leading-relaxed">
               Our core policies are designed to safeguard riders, protect driver partners, and uphold clean air standards across every journey.
             </p>
           </div>
@@ -438,7 +438,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
                 <h3 className="text-xl font-bold tracking-tight">Lost & Found Chain of Custody</h3>
               </div>
               <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">
-                Chauffeurs conduct thorough cabin inspections at the conclusion of every trip. Recovered personal belongings are logged into our dispatch registry and secured until prompt return to the verified owner. No fees are charged for retrieving lost items.
+                Drivers conduct thorough cabin inspections at the conclusion of every trip. Recovered personal belongings are logged into our dispatch registry and secured until prompt return to the verified owner. No fees are charged for retrieving lost items.
               </p>
             </div>
           </div>
@@ -455,7 +455,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
               Contact Our 24/7 Help Desk
             </h2>
-            <p className="text-neutral-600 dark:text-neutral-300 text-base font-light">
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal leading-relaxed">
               Have an urgent question or need trip support? Our dedicated customer care team is available around the clock.
             </p>
           </div>
@@ -494,7 +494,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
             <h3 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">
               Fastest support is in the DigiVolt App
             </h3>
-            <p className="text-neutral-400 text-sm sm:text-base font-light max-w-xl mx-auto mb-8">
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-400 font-normal max-w-xl mx-auto mb-8 leading-relaxed">
               Track your trip history, report an issue with one tap, or chat live with our dispatch operations team directly from your smartphone.
             </p>
             <button

@@ -17,7 +17,7 @@ export const TechnologyTab: React.FC<TechnologyTabProps> = ({ onRideClick }) => 
     },
     {
       title: 'Active ADAS & Safety Telematics',
-      desc: 'Forward collision mitigation, pedestrian detection, and automatic emergency braking assist our vetted chauffeurs on every trip.',
+      desc: 'Forward collision mitigation, pedestrian detection, and automatic emergency braking assist our vetted drivers on every trip.',
     },
     {
       title: 'Fleet AI & Smart Dispatch',
@@ -33,7 +33,7 @@ export const TechnologyTab: React.FC<TechnologyTabProps> = ({ onRideClick }) => 
           The DigiVolt EV Platform
         </h1>
         <p className="text-lg sm:text-2xl text-neutral-700 dark:text-neutral-300 font-light leading-relaxed max-w-3xl mb-8 sm:mb-10">
-          A custom-engineered 100% electric architecture paired with advanced driver-assist safety telemetry and professional vetted chauffeurs. Built for whisper-quiet comfort, zero emissions, and uncompromised passenger peace of mind.
+          A custom-engineered 100% electric architecture paired with advanced driver-assist safety telemetry and professional vetted drivers. Built for whisper-quiet comfort, zero emissions, and uncompromised passenger peace of mind.
         </p>
 
         <div className="flex flex-wrap items-center gap-4">

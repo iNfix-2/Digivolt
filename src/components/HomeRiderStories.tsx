@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Quote } from 'lucide-react';
 
 export const HomeRiderStories: React.FC = () => {
   const [[page, direction], setPage] = useState([0, 0]);
@@ -9,13 +9,15 @@ export const HomeRiderStories: React.FC = () => {
     {
       name: 'Amina',
       location: 'Kaduna Central, Nigeria',
+      image: '/riders/amina.jpg',
       quote:
-        'The whisper-quiet electric cabin lets me work and relax during my daily commute along Ahmadu Bello Way without any engine fumes or noise. Having a courteous, vetted chauffeur provides total peace of mind.',
+        'The whisper-quiet electric cabin lets me work and relax during my daily commute along Ahmadu Bello Way without any engine fumes or noise. Having a courteous, vetted driver provides total peace of mind.',
       tag: 'DAILY COMMUTER',
     },
     {
       name: 'Ibrahim',
       location: 'Barnawa, Kaduna',
+      image: '/riders/ibrahim.jpg',
       quote:
         'Booking DigiVolt for evening trips in Barnawa has completely changed how I move around Kaduna. The EV is pristine, zero emissions, and the drivers are certified professionals.',
       tag: 'ECO COMMUTER',
@@ -23,6 +25,7 @@ export const HomeRiderStories: React.FC = () => {
     {
       name: 'Zainab',
       location: 'Millennium City, Kaduna',
+      image: '/riders/zainab.jpg',
       quote:
         'Knowing every ride produces zero tailpipe emissions while delivering 5-star safety is incredible. DigiVolt is setting a brand new standard for clean, reliable transportation in Kaduna.',
       tag: 'SUSTAINABILITY ADVOCATE',
@@ -30,6 +33,7 @@ export const HomeRiderStories: React.FC = () => {
     {
       name: 'Farouk',
       location: 'Independence Way, Kaduna',
+      image: '/riders/farouk.jpg',
       quote:
         'Zero noise pollution, smooth electric acceleration, and vetted drivers who prioritize safety and punctuality. By far the cleanest and most comfortable ride in Kaduna.',
       tag: 'BUSINESS EXECUTIVE',
@@ -104,21 +108,58 @@ export const HomeRiderStories: React.FC = () => {
                   “{currentStory.quote}”
                 </p>
 
-                <div>
-                  <h4 className="text-base sm:text-lg font-bold text-black dark:text-white tracking-tight">
-                    {currentStory.name}
-                  </h4>
-                  <div className="text-sm text-neutral-600 dark:text-gray-400 mt-1">
-                    <span>{currentStory.location}</span>
+                {/* Rider Info with Portrait Avatar */}
+                <div className="flex items-center gap-3.5 sm:gap-4">
+                  <img
+                    src={currentStory.image}
+                    alt={currentStory.name}
+                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-neutral-200 dark:border-white/20 shadow-sm shrink-0"
+                  />
+                  <div>
+                    <h4 className="text-base sm:text-lg font-bold text-black dark:text-white tracking-tight">
+                      {currentStory.name}
+                    </h4>
+                    <div className="text-xs sm:text-sm text-neutral-600 dark:text-gray-400 mt-0.5">
+                      <span>{currentStory.location}</span>
+                    </div>
                   </div>
                 </div>
               </motion.div>
             </AnimatePresence>
           </div>
 
-          {/* Bottom Pagination & Navigation Controls */}
-          <div className="flex items-center justify-between pt-8 sm:pt-10 mt-6">
-            {/* Interactive Dot Indicators */}
+          {/* Bottom Waymo-Style Circular Avatars Switcher & Navigation Controls */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-8 sm:pt-10 mt-6 border-t border-neutral-200/80 dark:border-white/10">
+            {/* Interactive Rider Avatars (Waymo Style) */}
+            <div className="flex items-center gap-3 sm:gap-4">
+              {stories.map((story, idx) => {
+                const isActive = activeIndex === idx;
+                return (
+                  <button
+                    key={story.name}
+                    onClick={() => {
+                      const diff = idx - activeIndex;
+                      if (diff !== 0) paginate(diff);
+                    }}
+                    className={`relative rounded-full transition-all duration-300 cursor-pointer p-0.5 ${
+                      isActive
+                        ? 'ring-2 sm:ring-[3px] ring-black dark:ring-white ring-offset-2 dark:ring-offset-neutral-950 scale-105 sm:scale-110 opacity-100 shadow-md'
+                        : 'opacity-50 hover:opacity-90 scale-95 hover:scale-100 border border-neutral-300 dark:border-neutral-700'
+                    }`}
+                    aria-label={`View testimonial from ${story.name}`}
+                    title={`${story.name} (${story.location})`}
+                  >
+                    <img
+                      src={story.image}
+                      alt={story.name}
+                      className="w-11 h-11 sm:w-13 sm:h-13 rounded-full object-cover"
+                    />
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Pagination Controls: Dots */}
             <div className="flex items-center gap-2">
               {stories.map((_, idx) => (
                 <button
@@ -135,24 +176,6 @@ export const HomeRiderStories: React.FC = () => {
                   aria-label={`Go to slide ${idx + 1}`}
                 />
               ))}
-            </div>
-
-            {/* Next / Prev Buttons */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => paginate(-1)}
-                className="w-10 h-10 rounded-full bg-white dark:bg-neutral-900 flex items-center justify-center hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors cursor-pointer text-black dark:text-white shadow-sm"
-                aria-label="Previous rider story"
-              >
-                <ChevronLeft className="w-4 h-4 text-black dark:text-white" />
-              </button>
-              <button
-                onClick={() => paginate(1)}
-                className="w-10 h-10 rounded-full bg-white dark:bg-neutral-900 flex items-center justify-center hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors cursor-pointer text-black dark:text-white shadow-sm"
-                aria-label="Next rider story"
-              >
-                <ChevronRight className="w-4 h-4 text-black dark:text-white" />
-              </button>
             </div>
           </div>
 

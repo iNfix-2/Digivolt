@@ -44,7 +44,7 @@ export const RidesOmniCta: React.FC<RidesOmniCtaProps> = ({ onOpenAppModal }) =>
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-sm sm:text-base text-neutral-400 max-w-xl mx-auto mb-8 leading-relaxed font-normal"
+          className="text-xs sm:text-lg md:text-xl text-neutral-400 max-w-xl mx-auto mb-8 leading-relaxed font-normal"
         >
           Download the app and experience the future of ride-hailing with 100% electric vehicles. Simply enter your details and secure your ride in seconds.
         </motion.p>

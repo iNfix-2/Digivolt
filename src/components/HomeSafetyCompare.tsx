@@ -101,7 +101,7 @@ export const HomeSafetyCompare: React.FC<HomeSafetyCompareProps> = ({ onSelectSc
               0g
             </div>
             <h3 className="text-xl sm:text-3xl font-bold tracking-tight text-black dark:text-white mb-4">
-              tailpipe emissions per mile — 100% vetted chauffeurs*
+              tailpipe emissions per mile — 100% vetted drivers*
             </h3>
             <a
               href="#safety"

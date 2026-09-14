@@ -31,7 +31,7 @@ export const SafetyTab: React.FC<SafetyTabProps> = ({ onRideClick }) => {
   const safetyPillars = [
     {
       title: 'Vetted Driver Excellence',
-      desc: 'Every chauffeur undergoes thorough multi-stage background checks, in-person driving exams, and continuous safety & hospitality certifications.',
+      desc: 'Every driver undergoes thorough multi-stage background checks, in-person driving exams, and continuous safety & hospitality certifications.',
     },
     {
       title: 'Active ADAS Collision Avoidance',
@@ -134,14 +134,14 @@ export const SafetyTab: React.FC<SafetyTabProps> = ({ onRideClick }) => {
             <div className="aspect-[16/10] overflow-hidden relative">
               <img
                 src="/campaign/pickup_business.jpg"
-                alt="Professional Chauffeur greeting passenger"
+                alt="Professional Driver greeting passenger"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
             <div className="p-6 sm:p-8 bg-neutral-50 dark:bg-neutral-950">
               <h3 className="text-xl font-bold tracking-tight text-black dark:text-white mb-2">
-                Executive Chauffeur Hospitality
+                Executive Driver Hospitality
               </h3>
               <p className="text-sm text-neutral-600 dark:text-gray-400 font-normal leading-relaxed">
                 Our drivers are trained professionals in defensive EV handling and VIP hospitality. Biometric identification and continuous feedback guarantee consistent 5-star service.

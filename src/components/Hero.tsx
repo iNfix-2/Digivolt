@@ -84,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           transition={{ duration: 0.9, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
           className="text-lg sm:text-xl md:text-2xl text-gray-200 font-light max-w-2xl mx-auto mb-10 tracking-tight leading-relaxed"
         >
-          Zero tailpipe emissions, whisper-quiet cabin comfort, and vetted professional chauffeurs. Available 24/7 in San Francisco, Phoenix, Los Angeles, and expanding.
+          Zero tailpipe emissions, whisper-quiet cabin comfort, and vetted professional drivers. Available 24/7 in San Francisco, Phoenix, Los Angeles, and expanding.
         </motion.p>
 
         {/* Pill-Shaped CTA with Instant Color Reversal Hover State */}

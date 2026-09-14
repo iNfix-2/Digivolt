@@ -22,7 +22,7 @@ export const RidesHero: React.FC<RidesHeroProps> = ({ onRideClick }) => {
           className="mb-4 sm:mb-6"
         >
           <p className="text-xs sm:text-base text-neutral-700 dark:text-gray-300 font-medium tracking-tight">
-            100% all-electric ride-hailing with professional vetted chauffeurs
+            100% all-electric ride-hailing with professional vetted drivers
           </p>
         </motion.div>
 
@@ -40,7 +40,7 @@ export const RidesHero: React.FC<RidesHeroProps> = ({ onRideClick }) => {
           initial={{ y: 24, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="text-base sm:text-2xl text-neutral-600 dark:text-gray-300 font-normal max-w-3xl mb-8 sm:mb-10 leading-relaxed"
+          className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal max-w-3xl mb-8 sm:mb-10 leading-relaxed"
         >
           Redefining urban mobility with zero tailpipe emissions, whisper-quiet cabin comfort, and rigorously screened professional drivers.
         </motion.p>

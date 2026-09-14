@@ -19,7 +19,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
     },
     {
       year: '2022',
-      title: 'Professional Chauffeur Academy',
+      title: 'Professional Driver Academy',
       desc: 'Launched our rigorous vetting and customer hospitality academy, ensuring every passenger travels with certified drivers.',
     },
     {
@@ -45,7 +45,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
     },
     {
       title: 'Active ADAS & Safety Telematics',
-      desc: 'Forward collision mitigation, pedestrian detection, and automatic emergency braking assist our vetted chauffeurs on every trip.',
+      desc: 'Forward collision mitigation, pedestrian detection, and automatic emergency braking assist our vetted drivers on every trip.',
     },
     {
       title: 'Fleet AI & Smart Dispatch',
@@ -60,8 +60,8 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tighter text-black dark:text-white leading-[1.02] sm:leading-[0.98] mb-6 sm:mb-8 max-w-5xl">
           Redefining <span className="text-black dark:text-white">Urban Mobility</span>
         </h1>
-        <p className="text-lg sm:text-2xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed max-w-3xl mb-8 sm:mb-10">
-          DigiVolt is an electric mobility company with a mission to deliver clean, whisper-quiet, and exceptionally safe ride-hailing powered by 100% electric vehicles and professional vetted chauffeurs.
+        <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed max-w-3xl mb-8 sm:mb-10">
+          DigiVolt is an electric mobility company with a mission to deliver clean, whisper-quiet, and exceptionally safe ride-hailing powered by 100% electric vehicles and professional vetted drivers.
         </p>
 
         {onRideClick && (
@@ -115,8 +115,8 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
             The DigiVolt EV Platform
           </h2>
-          <p className="text-lg sm:text-xl text-neutral-700 dark:text-neutral-300 font-light leading-relaxed">
-            Our custom-engineered 100% electric vehicle platform pairs advanced driver-assist safety telemetry with professional vetted chauffeurs. Built from the ground up for whisper-quiet comfort, zero emissions, and complete passenger peace of mind.
+          <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-neutral-300 font-normal leading-relaxed">
+            Our custom-engineered 100% electric vehicle platform pairs advanced driver-assist safety telemetry with professional vetted drivers. Built from the ground up for whisper-quiet comfort, zero emissions, and complete passenger peace of mind.
           </p>
         </div>
 
@@ -150,7 +150,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
               100% Renewable charging & zero urban smog
             </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-300 font-light leading-relaxed mb-8">
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal leading-relaxed mb-8">
               Every DigiVolt vehicle connects to verified renewable solar and wind charging depots. By integrating battery life telemetry with smart grid balancing, our fleet operates continuously without burdening local municipal power networks.
             </p>
             <div className="flex items-center gap-3 text-sm font-semibold text-black dark:text-white">

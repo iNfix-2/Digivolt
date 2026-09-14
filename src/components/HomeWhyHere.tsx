@@ -25,8 +25,8 @@ export const HomeWhyHere: React.FC = () => {
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
             Why we’re here
           </h2>
-          <p className="text-xl sm:text-2xl text-neutral-700 dark:text-neutral-300 font-light leading-relaxed">
-            Urban transit faces two urgent crises: suffocating emissions polluting our cities, and inconsistent rider safety from unvetted gig services. DigiVolt is redefining urban mobility by merging 100% all-electric vehicles with rigorously screened, professional chauffeurs.
+          <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-neutral-300 font-normal leading-relaxed">
+            Urban transit faces two urgent crises: suffocating emissions polluting our cities, and inconsistent rider safety from unvetted gig services. DigiVolt is redefining urban mobility by merging 100% all-electric vehicles with rigorously screened, professional drivers.
           </p>
         </div>
 

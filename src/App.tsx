@@ -141,7 +141,7 @@ export function App() {
       title: 'Redefining Urban Mobility in Kaduna',
       videoSrc: 'https://storage.googleapis.com/waymo-prod-cdn/uploads/797b1a896b36484b3fc9391673befa8d-rides_hero.mp4',
       subtitle: 'Official Fleet Film',
-      description: 'Experience how DigiVolt is delivering quiet, clean, zero-emission transportation with professional vetted chauffeurs across Kaduna.',
+      description: 'Experience how DigiVolt is delivering quiet, clean, zero-emission transportation with professional vetted drivers across Kaduna.',
     });
   };
 

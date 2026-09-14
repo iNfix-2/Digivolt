@@ -9,7 +9,7 @@ export const TechnologyBreakout: React.FC = () => {
     { value: '100M+', label: 'Clean Electric Miles', detail: 'Zero-emission miles completed across active metropolitan service areas.' },
     { value: '0g', label: 'Tailpipe Emissions', detail: '100% all-electric vehicles charged using verified renewable solar and wind.' },
     { value: '<52dB', label: 'Acoustic Comfort', detail: 'Ultra-low interior cabin noise eliminating motor drone and travel fatigue.' },
-    { value: '100%', label: 'Vetted Chauffeurs', detail: 'Rigorously background-checked drivers trained in safety and hospitality.' },
+    { value: '100%', label: 'Vetted Drivers', detail: 'Rigorously background-checked drivers trained in safety and hospitality.' },
   ];
 
   const techDetails = {
@@ -38,7 +38,7 @@ export const TechnologyBreakout: React.FC = () => {
       title: 'Advanced Driver Assistance (ADAS)',
       subtitle: 'Proactive Collision Avoidance & Telemetry',
       description:
-        'Our vetted chauffeurs are backed by an array of intelligent safety sensors providing forward collision warning, automatic emergency braking, blind spot monitoring, and pedestrian collision mitigation.',
+        'Our vetted drivers are backed by an array of intelligent safety sensors providing forward collision warning, automatic emergency braking, blind spot monitoring, and pedestrian collision mitigation.',
       metrics: ['Automated emergency braking', '360° radar & camera envelope', 'Active driver alert monitoring'],
     },
   };
@@ -66,10 +66,10 @@ export const TechnologyBreakout: React.FC = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg sm:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed"
+            className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed"
           >
             Engineered from battery chemistry to cloud telematics for urban ride-hailing excellence. 
-            DigiVolt pairs high-efficiency 800V EV platforms with active collision-avoidance assistance and certified professional chauffeurs.
+            DigiVolt pairs high-efficiency 800V EV platforms with active collision-avoidance assistance and certified professional drivers.
           </motion.p>
         </div>
 
@@ -209,7 +209,7 @@ export const TechnologyBreakout: React.FC = () => {
                         <span className="text-black dark:text-white font-semibold">37.7749° N, 122.4194° W</span>
                       </div>
                       <div className="flex justify-between p-2.5 rounded bg-neutral-100 dark:bg-neutral-900">
-                        <span className="text-neutral-600 dark:text-gray-400">CHAUFFEUR VERIFICATION</span>
+                        <span className="text-neutral-600 dark:text-gray-400">DRIVER VERIFICATION</span>
                         <span className="text-black dark:text-white font-semibold">CERTIFIED #DV-8924</span>
                       </div>
                       <div className="flex justify-between p-2.5 rounded bg-neutral-100 dark:bg-neutral-900">

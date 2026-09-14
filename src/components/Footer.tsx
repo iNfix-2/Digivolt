@@ -99,7 +99,7 @@ export const Footer: React.FC<FooterProps> = ({ darkMode, onSelectTab, onOpenApp
               />
             </div>
             <p className="text-sm text-neutral-700 dark:text-gray-300 max-w-md font-normal leading-relaxed">
-              The future of ride-hailing is Electric. Redefining urban mobility with zero tailpipe emissions, whisper-quiet cabin comfort, and rigorously vetted professional chauffeurs.
+              The future of ride-hailing is Electric. Redefining urban mobility with zero tailpipe emissions, whisper-quiet cabin comfort, and rigorously vetted professional drivers.
             </p>
           </div>
 

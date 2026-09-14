@@ -74,7 +74,7 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
               transition={{ duration: 0.8, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
               className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed"
             >
-              100% electric fleet. Rigorously vetted professional chauffeurs. Zero emissions, whisper-quiet cabin comfort, and uncompromising safety.
+              100% electric fleet. Rigorously vetted professional drivers. Zero emissions, whisper-quiet cabin comfort, and uncompromising safety.
             </motion.p>
 
             <motion.div
@@ -104,7 +104,7 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
             {/* Left Pill */}
             <div className="bg-white/95 dark:bg-black/95 backdrop-blur-md rounded-2xl sm:rounded-full px-6 py-4 shadow-xl flex items-center justify-center">
               <p className="text-xs sm:text-sm text-neutral-800 dark:text-gray-200 font-medium text-center">
-                100% electric rides with professional vetted chauffeurs
+                100% electric rides with professional vetted drivers
               </p>
             </div>
 
@@ -128,7 +128,7 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
       <div className="sm:hidden bg-white dark:bg-black px-3.5 py-3.5 space-y-2 transition-colors duration-150">
         <div className="bg-white dark:bg-black rounded-2xl px-4 py-3 shadow-md flex items-center justify-center">
           <p className="text-xs text-neutral-800 dark:text-gray-200 font-medium text-center leading-relaxed">
-            100% electric rides with professional vetted chauffeurs
+            100% electric rides with professional vetted drivers
           </p>
         </div>
         <button

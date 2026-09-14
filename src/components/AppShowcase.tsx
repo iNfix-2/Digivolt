@@ -43,8 +43,8 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ onGetApp }) => {
             Designed for <span className="text-black dark:text-white">effortless transit</span>.
           </h2>
 
-          <p className="text-base sm:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
-            Experience the new standard of electric ride-hailing across Nigeria. Explore real-time GPS tracking, transparent fixed fares, and instant chauffeur verification right from your phone.
+          <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
+            Experience the new standard of electric ride-hailing across Nigeria. Explore real-time GPS tracking, transparent fixed fares, and instant driver verification right from your phone.
           </p>
         </div>
 

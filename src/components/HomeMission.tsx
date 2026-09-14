@@ -14,8 +14,8 @@ export const HomeMission: React.FC<HomeMissionProps> = ({ onExploreAbout }) => {
             Our mission: <span className="text-black dark:text-white">Redefining urban mobility</span>
           </h2>
 
-          <p className="text-lg sm:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed mb-10 max-w-3xl">
-            At DigiVolt, we believe urban ride-hailing must be clean, silent, and dependable. Our mission is to accelerate the transition to 100% electric mobility while providing riders with the peace of mind of vetted chauffeurs, predictable ETAs, and zero tailpipe emissions. We are passionate about improving our cities to make them cleaner and quieter for generations to come.
+          <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed mb-10 max-w-3xl">
+            At DigiVolt, we believe urban ride-hailing must be clean, silent, and dependable. Our mission is to accelerate the transition to 100% electric mobility while providing riders with the peace of mind of vetted drivers, predictable ETAs, and zero tailpipe emissions. We are passionate about improving our cities to make them cleaner and quieter for generations to come.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

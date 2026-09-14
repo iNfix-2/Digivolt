@@ -79,7 +79,7 @@ export const MediaPlaceholder: React.FC<MediaPlaceholderProps> = ({
                 Pure Personal Space
               </p>
               <p className="text-sm text-gray-400">
-                Whisper-quiet electric drive, customized dual-zone climate, and vetted chauffeur professionalism.
+                Whisper-quiet electric drive, customized dual-zone climate, and vetted driver professionalism.
               </p>
             </div>
 

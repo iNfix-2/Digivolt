@@ -1,5 +1,5 @@
 import React from 'react';
-import digivoltFleetImg from '../assets/digivolt-fleet.png';
+import digivoltAppShowcaseImg from '../assets/digivolt-app-fleet-showcase.png';
 
 interface HomeFeaturesProps {
   onDownloadApp?: () => void;
@@ -18,8 +18,8 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-black dark:text-white mb-3 sm:mb-4">
               Meet DigiVolt
             </h2>
-            <p className="text-base sm:text-xl text-neutral-800 dark:text-neutral-200 font-light mb-6 sm:mb-8 leading-relaxed">
-              The future of ride-hailing is Electric. Redefining urban mobility with zero tailpipe emissions and premium vetted chauffeurs.
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal mb-6 sm:mb-8 leading-relaxed">
+              The future of ride-hailing is Electric. Redefining urban mobility with zero tailpipe emissions and premium vetted drivers.
             </p>
             <button
               onClick={onDownloadApp}
@@ -29,13 +29,13 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
             </button>
           </div>
 
-          {/* Right Image: Two DigiVolt Vehicles */}
+          {/* Right Image: DigiVolt App & Fleet Showcase */}
           <div className="lg:col-span-7 flex justify-center lg:justify-end">
-            <div className="w-full max-w-2xl rounded-2xl p-2 bg-neutral-50 dark:bg-neutral-950">
+            <div className="w-full max-w-md lg:max-w-lg bg-black rounded-3xl p-4 sm:p-6 shadow-2xl border border-neutral-200/80 dark:border-white/10 flex items-center justify-center overflow-hidden select-none">
               <img
-                src={digivoltFleetImg}
-                alt="DigiVolt 100% all-electric fleet vehicles"
-                className="w-full h-auto object-contain rounded-xl"
+                src={digivoltAppShowcaseImg}
+                alt="DigiVolt mobile app and 100% electric vehicle fleet"
+                className="w-full h-auto max-h-[560px] object-contain rounded-2xl transition-transform duration-300 hover:scale-[1.02]"
                 loading="lazy"
               />
             </div>
@@ -59,7 +59,7 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
           {/* Feature 2: Smarter & Safer */}
           <div className="flex flex-col p-6 sm:p-8 rounded-2xl bg-neutral-50 dark:bg-neutral-950">
             <h3 className="text-xl font-bold tracking-tight text-black dark:text-white mb-2">
-              Vetted Professional Chauffeurs
+              Vetted Professional Drivers
             </h3>
             <p className="text-sm text-neutral-600 dark:text-neutral-300 font-light leading-relaxed">
               Rigorously background-checked, certified drivers equipped with active telemetry and advanced collision-avoidance assistance.

@@ -12,11 +12,11 @@ export const RidesFAQ: React.FC = () => {
     },
     {
       q: 'Who is driving the vehicle?',
-      a: 'Every DigiVolt ride is piloted by a certified, professionally vetted chauffeur. Our drivers undergo rigorous criminal and DMV background screening, in-person hospitality training, and road safety validation.',
+      a: 'Every DigiVolt ride is piloted by a certified, professionally vetted driver. Our drivers undergo rigorous criminal and DMV background screening, in-person hospitality training, and road safety validation.',
     },
     {
       q: 'How safe is riding in a DigiVolt electric vehicle?',
-      a: 'Safety is our highest priority. In addition to our vetted chauffeurs, our 100% all-electric vehicles feature 5-star structural crash safety ratings, automatic emergency braking, active ADAS collision avoidance, and 24/7 telematics monitoring.',
+      a: 'Safety is our highest priority. In addition to our vetted drivers, our 100% all-electric vehicles feature 5-star structural crash safety ratings, automatic emergency braking, active ADAS collision avoidance, and 24/7 telematics monitoring.',
     },
     {
       q: 'Are DigiVolt rides truly 100% electric?',
@@ -24,11 +24,11 @@ export const RidesFAQ: React.FC = () => {
     },
     {
       q: 'How do I book and verify my ride?',
-      a: 'Open the DigiVolt One app, enter your destination, and confirm your ride. You will immediately receive your chauffeur’s photo, verified name, vehicle license plate, and a digital security PIN.',
+      a: 'Open the DigiVolt One app, enter your destination, and confirm your ride. You will immediately receive your driver’s photo, verified name, vehicle license plate, and a digital security PIN.',
     },
     {
       q: 'What happens if I need assistance during my trip?',
-      a: 'Our Rider Care team is available 24/7. You can instantly connect with a live representative via the in-app support button or speak with your courteous chauffeur directly.',
+      a: 'Our Rider Care team is available 24/7. You can instantly connect with a live representative via the in-app support button or speak with your courteous driver directly.',
     },
   ];
 
@@ -44,8 +44,8 @@ export const RidesFAQ: React.FC = () => {
               Have more questions about riding with <span className="text-black dark:text-white">DigiVolt</span>?
             </h2>
 
-            <p className="text-lg text-neutral-700 dark:text-gray-300 font-normal mb-8">
-              Everything you need to know about our 100% electric fleet, vetted chauffeurs, zero-emission sustainability, and booking.
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal mb-8 leading-relaxed">
+              Everything you need to know about our 100% electric fleet, vetted drivers, zero-emission sustainability, and booking.
             </p>
 
             <a
@@ -115,7 +115,7 @@ export const RidesFAQ: React.FC = () => {
                       transition={{ duration: 0.3 }}
                       className="px-6 pb-6 pt-2 bg-neutral-50 dark:bg-neutral-950 text-neutral-700 dark:text-gray-300 font-normal leading-relaxed"
                     >
-                      <p className="text-base">{faq.a}</p>
+                      <p className="text-sm sm:text-base leading-relaxed">{faq.a}</p>
                     </motion.div>
                   )}
                 </div>

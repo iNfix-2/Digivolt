@@ -9,7 +9,7 @@ export const RidesExperience: React.FC = () => {
       image: '/campaign/rainy_commute.jpg',
     },
     {
-      title: 'Vetted Chauffeur & Luggage Care',
+      title: 'Vetted Driver & Luggage Care',
       description: 'Instant driver identity verification, luggage assistance, and digital security PINs ensure absolute confidence on every journey.',
       image: '/campaign/airport_trunk.jpg',
     },
@@ -45,9 +45,9 @@ export const RidesExperience: React.FC = () => {
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
               Reclaim your <span className="text-black dark:text-white">commute</span>.
             </h2>
-            <p className="text-xl sm:text-2xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
               DigiVolt gives you a peaceful private sanctuary to focus on more meaningful things. 
-              Rely on a consistent, whisper-quiet electric experience with professional chauffeurs that eliminate the stresses of driving.
+              Rely on a consistent, whisper-quiet electric experience with professional drivers that eliminate the stresses of driving.
             </p>
           </div>
 
@@ -59,8 +59,8 @@ export const RidesExperience: React.FC = () => {
             className="rounded-3xl sm:rounded-[36px] overflow-hidden aspect-[16/9] shadow-xl bg-neutral-100 dark:bg-neutral-900"
           >
             <img
-              src="/campaign/silent_fleet.jpg"
-              alt="DigiVolt 100% Electric Silent Green Fleet on Lekki-Ikoyi Link Bridge"
+              src="/campaign/peaceful_sanctuary.jpg"
+              alt="Passenger enjoying a peaceful private sanctuary in DigiVolt EV cabin with laptop and coffee"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -73,7 +73,7 @@ export const RidesExperience: React.FC = () => {
             <h3 className="text-4xl sm:text-5xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-4">
               A better way to get there
             </h3>
-            <p className="text-lg text-neutral-600 dark:text-gray-400 font-normal">
+            <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-gray-400 font-normal leading-relaxed">
               Elevate the way you move through life with zero emissions, vetted safety, and serene cabin comfort.
             </p>
           </div>
