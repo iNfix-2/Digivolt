@@ -102,9 +102,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           },
         },
       ],
-      image:
-        'https://lh3.googleusercontent.com/zRvkZADe5BMf6S5Gqv27V2H7DSTTY5WR6CRZfMcplWDMoMcodOU-BOgT8YX_ElzJg34wAnPOrKCl1w366yn-vj0L8WQ97PrwdkF_Yk0=s0-e365',
-      imageAlt: 'DigiVolt electric vehicle passenger boarding',
+      image: '/campaign/digivolt-ride-pickup.jpg',
+      imageAlt: 'DigiVolt electric vehicle with chauffeur and passenger',
     },
     about: {
       id: 'about',
@@ -410,13 +409,24 @@ export const Navbar: React.FC<NavbarProps> = ({
 
                 {/* Column 3 (Right): Transparent Photographic Cutout Image */}
                 <div className="col-span-4 flex justify-end items-center">
-                  <div className="relative w-full max-w-sm h-48 sm:h-56 flex items-center justify-end">
-                    <img
-                      src={currentMenu.image}
-                      alt={currentMenu.imageAlt}
-                      className="max-h-full max-w-full object-contain drop-shadow-sm select-none"
-                      loading="lazy"
-                    />
+                  <div className="relative w-full max-w-sm sm:max-w-md h-48 sm:h-56 flex items-center justify-end">
+                    {darkMode ? (
+                      <img
+                        src={currentMenu.image}
+                        alt={currentMenu.imageAlt}
+                        className="max-h-full max-w-full object-contain drop-shadow-sm select-none"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="rounded-2xl overflow-hidden bg-black shadow-md border border-neutral-200 flex items-center justify-center p-1">
+                        <img
+                          src={currentMenu.image}
+                          alt={currentMenu.imageAlt}
+                          className="max-h-44 sm:max-h-48 max-w-full object-contain select-none"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
 
