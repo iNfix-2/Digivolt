@@ -68,11 +68,11 @@ export function App() {
         return;
       }
 
-      // Legacy or redirected technology hash -> redirect to about tab and scroll to technology section
-      if (rawHash === 'technology' || rawHash === 'about-technology') {
+      // Technology or About sub-anchors -> redirect to about tab and scroll to section
+      if (rawHash === 'technology' || rawHash === 'about-technology' || rawHash === 'about-charging') {
         setActiveTab('about');
         setTimeout(() => {
-          document.getElementById('about-technology')?.scrollIntoView({ behavior: 'smooth' });
+          document.getElementById(rawHash)?.scrollIntoView({ behavior: 'smooth' });
         }, 120);
         return;
       }

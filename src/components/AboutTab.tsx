@@ -6,34 +6,6 @@ interface AboutTabProps {
 }
 
 export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
-  const milestones = [
-    {
-      year: '2020',
-      title: 'The Clean Transit Initiative',
-      desc: 'Founded to challenge fossil-fuel congestion, noisy combustion engines, and inconsistent unvetted gig ride-hailing.',
-    },
-    {
-      year: '2021',
-      title: '100% All-Electric Fleet Architecture',
-      desc: 'Engineered and deployed our first dedicated fleet of zero-emission electric vehicles with integrated ADAS safety telemetry.',
-    },
-    {
-      year: '2022',
-      title: 'Professional Driver Academy',
-      desc: 'Launched our rigorous vetting and customer hospitality academy, ensuring every passenger travels with certified drivers.',
-    },
-    {
-      year: '2023',
-      title: 'Metro Expansion & Renewable Hubs',
-      desc: 'Expanded multi-city operations supported by rapid-charging solar and wind depot infrastructure.',
-    },
-    {
-      year: 'Today',
-      title: 'Redefining Urban Ride-Hailing',
-      desc: 'Hundreds of thousands of clean, whisper-quiet electric rides completed monthly with over 98% rider satisfaction.',
-    },
-  ];
-
   const hardwarePillars = [
     {
       title: '800V Electric Architecture',
@@ -76,35 +48,6 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
         )}
       </section>
 
-      {/* 2. Timeline Section */}
-      <section className="py-14 sm:py-24 px-4 sm:px-10 lg:px-16 max-w-7xl mx-auto border-t border-neutral-200 dark:border-neutral-900">
-        <div className="max-w-3xl mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter text-black dark:text-white leading-tight">
-            Pioneering the electric ride-hailing revolution
-          </h2>
-        </div>
-
-        <div className="space-y-8">
-          {milestones.map((m) => (
-            <div
-              key={m.year}
-              className="p-8 rounded-3xl bg-neutral-50 dark:bg-neutral-950 transition-all hover:shadow-lg flex flex-col sm:flex-row sm:items-baseline gap-6"
-            >
-              <div className="text-4xl font-black font-mono text-black dark:text-white sm:w-28 flex-shrink-0">
-                {m.year}
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-black dark:text-white mb-1">
-                  {m.title}
-                </h3>
-                <p className="text-base text-neutral-600 dark:text-gray-400 font-normal leading-relaxed">
-                  {m.desc}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* 3. Merged Technology & EV Platform Architecture */}
       <section id="about-technology" className="py-16 sm:py-28 px-4 sm:px-10 lg:px-16 max-w-7xl mx-auto border-t border-neutral-200 dark:border-neutral-900">
@@ -144,7 +87,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
       <TechnologyBreakout />
 
       {/* 5. Sustainability & Charging at Scale */}
-      <section className="py-24 sm:py-32 px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto">
+      <section id="about-charging" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto">
         <div className="bg-neutral-50 dark:bg-neutral-950 rounded-3xl p-8 sm:p-14 lg:p-16 shadow-sm border border-neutral-200 dark:border-neutral-900">
           <div className="max-w-3xl">
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">

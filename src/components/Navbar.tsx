@@ -128,15 +128,21 @@ export const Navbar: React.FC<NavbarProps> = ({
           },
         },
         {
-          text: 'Pioneering Timeline',
+          text: 'Interactive Tech Visualizer',
           action: () => {
             onSelectTab('about');
+            setTimeout(() => {
+              document.getElementById('technology')?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
           },
         },
         {
           text: 'Renewable Charging Hubs',
           action: () => {
             onSelectTab('about');
+            setTimeout(() => {
+              document.getElementById('about-charging')?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
           },
         },
       ],
