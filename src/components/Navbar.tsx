@@ -140,9 +140,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           },
         },
       ],
-      image:
-        'https://lh3.googleusercontent.com/zRpqLUgCQvULzBn-XIpFeWWLjHvOC09QFT0zUDh8vclC5AnybvRiqePEcbLOyLEa8v9HKmake_gnKfTZVQXMq4o-Co-QmDxIjwakwA=s0-e365',
-      imageAlt: 'DigiVolt electric vehicle in city sunset',
+      image: '/campaign/digivolt-ev-platform.jpg',
+      imageAlt: 'DigiVolt electric vehicle platform and fleet architecture',
     },
     support: {
       id: 'support',
