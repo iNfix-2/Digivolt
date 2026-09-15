@@ -1,22 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Check, MapPin } from 'lucide-react';
 
 interface RidesOmniCtaProps {
   onOpenAppModal: () => void;
 }
 
 export const RidesOmniCta: React.FC<RidesOmniCtaProps> = ({ onOpenAppModal }) => {
-  const [zipInput, setZipInput] = useState('');
-  const [zipChecked, setZipChecked] = useState(false);
-
-  const handleCheck = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (zipInput.trim()) {
-      setZipChecked(true);
-    }
-  };
-
   return (
     <section
       id="rides-made-simple"
@@ -48,54 +37,6 @@ export const RidesOmniCta: React.FC<RidesOmniCtaProps> = ({ onOpenAppModal }) =>
         >
           Download the app and experience the future of ride-hailing with 100% electric vehicles. Simply enter your details and secure your ride in seconds.
         </motion.p>
-
-        {/* Interactive City / Destination Check */}
-        <motion.div
-          initial={{ y: 25, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, margin: '-40px' }}
-          transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-md mb-8"
-        >
-          {!zipChecked ? (
-            <form onSubmit={handleCheck} className="flex items-center bg-neutral-900/90 backdrop-blur-md rounded-full p-1.5 shadow-2xl transition-colors">
-              <div className="pl-4 pr-2 text-neutral-400">
-                <MapPin className="w-4 h-4" />
-              </div>
-              <input
-                type="text"
-                placeholder="Enter Kaduna area or landmark"
-                value={zipInput}
-                onChange={(e) => setZipInput(e.target.value)}
-                className="w-full bg-transparent text-sm text-white placeholder-neutral-500 focus:outline-none px-2 font-medium"
-              />
-              <button
-                type="submit"
-                className="bg-white text-black text-xs sm:text-sm px-6 py-2.5 rounded-full font-semibold transition-all hover:bg-neutral-200 cursor-pointer"
-              >
-                Check
-              </button>
-            </form>
-          ) : (
-            <div className="p-4 rounded-2xl bg-neutral-900/90 backdrop-blur-md flex items-center justify-between text-left shadow-lg">
-              <div>
-                <div className="flex items-center gap-1.5 text-white text-xs font-bold">
-                  <Check className="w-4 h-4 text-emerald-400" />
-                  <span>DigiVolt Service Active in Kaduna Zone</span>
-                </div>
-                <p className="text-xs text-neutral-400 mt-0.5 font-medium">
-                  Instant electric vehicle pickup available for {zipInput}.
-                </p>
-              </div>
-              <button
-                onClick={() => setZipChecked(false)}
-                className="text-[11px] underline text-neutral-400 hover:text-white ml-3 cursor-pointer"
-              >
-                Change
-              </button>
-            </div>
-          )}
-        </motion.div>
 
         {/* CTA Button */}
         <motion.div
