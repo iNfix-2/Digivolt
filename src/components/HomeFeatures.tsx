@@ -44,7 +44,7 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
         </div>
 
         {/* 3 Core Features Below Meet DigiVolt */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6 sm:pt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 pt-6 sm:pt-12">
           
           {/* Feature 1: Sustainability */}
           <div className="flex flex-col p-6 sm:p-8 rounded-2xl bg-neutral-50 dark:bg-neutral-950">
