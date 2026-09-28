@@ -31,9 +31,9 @@ export const RidesHero: React.FC<RidesHeroProps> = ({ onRideClick }) => {
           initial={{ y: 32, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-3xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter text-black dark:text-white leading-[1.05] sm:leading-[1.02] max-w-5xl mb-4 sm:mb-6"
+          className="text-3xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-[1.05] sm:leading-[1.02] max-w-5xl mb-4 sm:mb-6"
         >
-          The future of ride-hailing is <span className="text-black dark:text-white">Electric</span>.
+          The future of ride-hailing is Electric.
         </motion.h1>
 
         <motion.p

@@ -42,8 +42,8 @@ export const RidesExperience: React.FC = () => {
         {/* Section 1: Reclaim Your Commute Hero Banner */}
         <div className="mb-32">
           <div className="max-w-4xl mb-14">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
-              Reclaim your <span className="text-black dark:text-white">commute</span>.
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight mb-6">
+              Reclaim your commute.
             </h2>
             <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
               DigiVolt gives you a peaceful private sanctuary to focus on more meaningful things. 
@@ -70,7 +70,7 @@ export const RidesExperience: React.FC = () => {
         {/* Section 2: A Better Way to Get There Grid */}
         <div id="rides-a-better-way-to-get-there">
           <div className="max-w-3xl mb-16">
-            <h3 className="text-4xl sm:text-5xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-4">
+            <h3 className="text-4xl sm:text-5xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight mb-4">
               A better way to get there
             </h3>
             <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-gray-400 font-normal leading-relaxed">
@@ -91,7 +91,7 @@ export const RidesExperience: React.FC = () => {
                   className="bg-neutral-50 dark:bg-neutral-950 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
                 >
                   <div className="p-8">
-                    <h4 className="text-xl font-bold tracking-tight text-black dark:text-white mb-2">
+                    <h4 className="text-xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-2">
                       {feature.title}
                     </h4>
                     <p className="text-sm text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">

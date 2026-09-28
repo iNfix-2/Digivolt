@@ -94,8 +94,8 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
           <span className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-500 mb-3 block">
             DIGIVOLT HELP CENTER & SUPPORT
           </span>
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-black dark:text-white leading-[1.05] sm:leading-[1.0] mb-6">
-            Here to help you ride with <span className="text-black dark:text-white">complete confidence</span>.
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-[1.05] sm:leading-[1.0] mb-6">
+            Here to help you ride with complete confidence.
           </h1>
           <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-neutral-300 font-normal leading-relaxed mb-8 sm:mb-10 max-w-3xl">
             Have questions about booking, payments, or safety? Explore our frequently asked questions, read our terms of service and passenger policies, or connect directly with our 24/7 support desk.
@@ -202,7 +202,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
       {activeSubTab === 'faq' && (
         <section id="support-faq" className="py-16 sm:py-24 px-4 sm:px-10 lg:px-16 max-w-5xl mx-auto">
           <div className="mb-10">
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal mb-8 leading-relaxed">
@@ -305,7 +305,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
             <span className="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-2 block">
               LEGAL AGREEMENT & USER TERMS
             </span>
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-4">
               Terms & Conditions
             </h2>
             <p className="text-xs sm:text-sm font-mono text-neutral-400">
@@ -389,7 +389,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
             <span className="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-2 block">
               STANDARDS & GUIDELINES
             </span>
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-4">
               Rider & Service Policies
             </h2>
             <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal leading-relaxed">
@@ -452,7 +452,7 @@ export const SupportTab: React.FC<SupportTabProps> = ({ onOpenAppModal }) => {
             <span className="text-xs font-mono uppercase tracking-widest text-neutral-500 mb-2 block">
               GET IN TOUCH
             </span>
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-4">
               Contact Our 24/7 Help Desk
             </h2>
             <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal leading-relaxed">

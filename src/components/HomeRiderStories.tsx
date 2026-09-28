@@ -68,8 +68,8 @@ export const HomeRiderStories: React.FC = () => {
         
         {/* Title without the 'Rider Stories' tag */}
         <div className="max-w-3xl mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-black dark:text-white leading-tight">
-            Why they ride with <span className="text-black dark:text-white">DigiVolt</span>
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight">
+            Why they ride with DigiVolt
           </h2>
         </div>
 

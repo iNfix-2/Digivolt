@@ -10,8 +10,8 @@ export const HomeMission: React.FC<HomeMissionProps> = ({ onExploreAbout }) => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Our Mission: Redefining Urban Mobility */}
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-8">
-            Our mission: <span className="text-black dark:text-white">Redefining urban mobility</span>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight mb-8">
+            Our mission: Redefining urban mobility
           </h2>
 
           <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed mb-10 max-w-3xl">

@@ -56,9 +56,9 @@ export const TechnologyBreakout: React.FC = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6"
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight mb-6"
           >
-            The future of <span className="text-black dark:text-white">electric ride-hailing</span> architecture.
+            The future of electric ride-hailing architecture.
           </motion.h2>
 
           <motion.p
@@ -242,7 +242,7 @@ export const TechnologyBreakout: React.FC = () => {
 
             {/* Content description for current tab */}
             <div className="lg:col-span-5 flex flex-col justify-center">
-              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-black dark:text-white mb-4">
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-4">
                 {currentTech.title}
               </h3>
               <p className="text-neutral-700 dark:text-gray-300 leading-relaxed font-normal mb-8 text-base">

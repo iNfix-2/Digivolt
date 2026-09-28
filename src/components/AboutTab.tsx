@@ -29,8 +29,8 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
     <div className="w-full bg-white dark:bg-black text-black dark:text-white transition-colors duration-150">
       {/* 1. Header Hero */}
       <section className="pt-20 sm:pt-40 pb-12 sm:pb-20 px-4 sm:px-10 lg:px-16 max-w-7xl mx-auto">
-        <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tighter text-black dark:text-white leading-[1.02] sm:leading-[0.98] mb-6 sm:mb-8 max-w-5xl">
-          Redefining <span className="text-black dark:text-white">Urban Mobility</span>
+        <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-[1.02] sm:leading-[0.98] mb-6 sm:mb-8 max-w-5xl">
+          Redefining Urban Mobility
         </h1>
         <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed max-w-3xl mb-8 sm:mb-10">
           DigiVolt is an electric mobility company with a mission to deliver clean, whisper-quiet, and exceptionally safe ride-hailing powered by 100% electric vehicles and professional vetted drivers.
@@ -55,7 +55,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
           <span className="text-xs font-mono uppercase tracking-[0.25em] text-neutral-500 mb-3 block">
             FLEET ARCHITECTURE & INNOVATION
           </span>
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight mb-6">
             The DigiVolt EV Platform
           </h2>
           <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-neutral-300 font-normal leading-relaxed">
@@ -71,7 +71,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
               className="p-8 rounded-3xl bg-neutral-50 dark:bg-neutral-950 transition-all hover:shadow-md flex flex-col justify-between group"
             >
               <div>
-                <h3 className="text-xl font-bold tracking-tight text-black dark:text-white mb-3">
+                <h3 className="text-xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-3">
                   {pillar.title}
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-300 font-light leading-relaxed">
@@ -90,7 +90,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onRideClick }) => {
       <section id="about-charging" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto">
         <div className="bg-neutral-50 dark:bg-neutral-950 rounded-3xl p-8 sm:p-14 lg:p-16 shadow-sm border border-neutral-200 dark:border-neutral-900">
           <div className="max-w-3xl">
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight mb-6">
               100% Renewable charging & zero urban smog
             </h2>
             <p className="text-xs sm:text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-normal leading-relaxed mb-8">

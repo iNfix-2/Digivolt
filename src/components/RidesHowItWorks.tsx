@@ -216,7 +216,7 @@ export const RidesHowItWorks: React.FC<RidesHowItWorksProps> = ({ onDownloadApp:
               <div className="md:col-span-6 flex flex-col justify-center pl-0 sm:pl-4 lg:pl-8">
                 
                 {/* Fixed Section Eyebrow Title: 'Hail the Future' */}
-                <h3 className="text-3xl sm:text-5xl lg:text-6xl font-light tracking-tight text-black dark:text-white mb-6 sm:mb-10 lg:mb-12 leading-tight">
+                <h3 className="text-3xl sm:text-5xl lg:text-6xl font-light tracking-tight text-[#00401A] dark:text-emerald-400 mb-6 sm:mb-10 lg:mb-12 leading-tight">
                   Hail the Future
                 </h3>
 
@@ -237,7 +237,7 @@ export const RidesHowItWorks: React.FC<RidesHowItWorksProps> = ({ onDownloadApp:
                       </div>
 
                       {/* Step Title */}
-                      <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-black dark:text-white mb-2.5 sm:mb-3.5 leading-snug">
+                      <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-2.5 sm:mb-3.5 leading-snug">
                         {current.title}
                       </h4>
 

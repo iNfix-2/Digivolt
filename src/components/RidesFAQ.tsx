@@ -40,8 +40,8 @@ export const RidesFAQ: React.FC = () => {
           
           {/* Left Column: Heading & Video */}
           <div className="lg:col-span-5">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tighter text-black dark:text-white leading-tight mb-6">
-              Have more questions about riding with <span className="text-black dark:text-white">DigiVolt</span>?
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-tight mb-6">
+              Have more questions about riding with DigiVolt?
             </h2>
 
             <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal mb-8 leading-relaxed">

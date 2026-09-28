@@ -24,7 +24,7 @@ export const RidesOmniCta: React.FC<RidesOmniCtaProps> = ({ onOpenAppModal }) =>
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-4 leading-tight"
         >
-          Rides made simple.
+          Rides made <span className="text-emerald-400">simple.</span>
         </motion.h2>
 
         {/* Supporting Description (reduced by 20%) */}

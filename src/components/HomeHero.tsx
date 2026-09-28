@@ -21,7 +21,7 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
         <div className="relative z-20 max-w-7xl mx-auto px-2 sm:px-8 w-full pt-2 sm:pt-4">
           <div className="mx-auto max-w-xl bg-white/95 dark:bg-black/95 backdrop-blur-md rounded-full px-3 py-1.5 sm:px-6 sm:py-2 flex items-center justify-between shadow-lg">
             <span className="text-[10.5px] sm:text-xs md:text-sm font-medium text-black dark:text-white tracking-tight whitespace-nowrap">
-              The future of ride-hailing is Electric. Ride with DigiVolt.
+              The future of ride-hailing is <span className="text-[#00401A] dark:text-emerald-400 font-semibold">Electric</span>. Ride with DigiVolt.
             </span>
             <button
               onClick={onGetApp}
@@ -63,9 +63,9 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
               initial={{ y: 24, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[2.2rem] sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-black dark:text-white leading-[1.08] sm:leading-tight mb-4 sm:mb-6 max-w-xs sm:max-w-4xl mx-auto"
+              className="text-[2.2rem] sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 leading-[1.08] sm:leading-tight mb-4 sm:mb-6 max-w-xs sm:max-w-4xl mx-auto"
             >
-              Redefining <span className="text-black dark:text-white">Urban Mobility</span>
+              Redefining Urban Mobility
             </motion.h1>
 
             <motion.p

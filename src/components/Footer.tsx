@@ -135,7 +135,7 @@ export const Footer: React.FC<FooterProps> = ({ darkMode, onSelectTab, onOpenApp
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 py-16">
           {footerColumns.map((col) => (
             <div key={col.title} className="flex flex-col space-y-4">
-              <h4 className="text-sm font-bold tracking-tight text-black dark:text-white uppercase font-mono">
+              <h4 className="text-sm font-bold tracking-tight text-[#00401A] dark:text-emerald-400 uppercase font-mono">
                 {col.title}
               </h4>
               <ul className="space-y-2.5">

@@ -43,8 +43,8 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ onGetApp }) => {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-10 sm:mb-16 lg:mb-20">
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-black dark:text-white leading-[1.05] mb-3 sm:mb-4">
-            Designed for <span className="text-black dark:text-white">effortless transit</span>.
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-[#00401A] dark:text-emerald-400 leading-[1.05] mb-3 sm:mb-4">
+            Designed for effortless transit.
           </h2>
 
           <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal leading-relaxed">
@@ -52,8 +52,8 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ onGetApp }) => {
           </p>
         </div>
 
-        {/* Alternating Zigzag Showcase (Structured across both mobile and larger screens) */}
-        <div className="space-y-8 sm:space-y-16 lg:space-y-24">
+        {/* Showcase Items: Spacious stacked layout on mobile, alternating zigzag on desktop */}
+        <div className="space-y-16 sm:space-y-20 md:space-y-24 lg:space-y-32">
           {showcaseItems.map((item, idx) => {
             const isEven = idx % 2 === 0;
 
@@ -64,15 +64,15 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ onGetApp }) => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{ duration: 0.7, delay: 0.08 * idx, ease: [0.16, 1, 0.3, 1] }}
-                className={`flex items-center gap-3 sm:gap-8 lg:gap-14 ${
-                  isEven ? 'flex-row' : 'flex-row-reverse'
+                className={`flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10 lg:gap-16 ${
+                  isEven ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
               >
-                {/* 1. Image Half */}
-                <div className="w-1/2 shrink-0">
+                {/* 1. Image: Full width on mobile with generous aspect ratio, 50% on desktop */}
+                <div className="w-full md:w-1/2 shrink-0">
                   <div
                     onClick={onGetApp}
-                    className="relative rounded-xl sm:rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-[16/10] bg-neutral-100 dark:bg-neutral-900 shadow-md border border-neutral-200/70 dark:border-neutral-800/80 cursor-pointer group select-none"
+                    className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[16/10] bg-neutral-100 dark:bg-neutral-900 shadow-lg border border-neutral-200/70 dark:border-neutral-800/80 cursor-pointer group select-none"
                   >
                     <img
                       src={item.mockupSrc}
@@ -83,24 +83,24 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ onGetApp }) => {
                   </div>
                 </div>
 
-                {/* 2. Content Half */}
-                <div className="w-1/2 flex flex-col justify-center">
-                  <span className="text-[9px] sm:text-xs font-mono uppercase tracking-wider text-emerald-700 dark:text-emerald-400 font-semibold mb-0.5 sm:mb-1.5 block">
+                {/* 2. Content: Spacious and legible on mobile, 50% on desktop */}
+                <div className="w-full md:w-1/2 flex flex-col justify-center mt-1 sm:mt-0">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#00401A] dark:text-emerald-400 font-semibold mb-1.5 sm:mb-2 block">
                     {item.category}
                   </span>
 
-                  <h3 className="text-xs sm:text-2xl lg:text-3xl font-bold tracking-tight text-black dark:text-white mb-1 sm:mb-2.5 leading-snug sm:leading-tight">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-2 sm:mb-3 leading-snug sm:leading-tight">
                     {item.title}
                   </h3>
 
-                  <p className="text-[10px] sm:text-sm lg:text-base text-neutral-600 dark:text-gray-300 font-normal leading-snug sm:leading-relaxed mb-2 sm:mb-4 line-clamp-3 sm:line-clamp-none">
+                  <p className="text-sm sm:text-base text-neutral-600 dark:text-gray-300 font-normal leading-relaxed mb-4 sm:mb-6">
                     {item.desc}
                   </p>
 
                   <div>
                     <button
                       onClick={onGetApp}
-                      className="inline-flex items-center justify-center bg-emerald-700 hover:bg-emerald-600 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white text-[10px] sm:text-xs lg:text-sm font-semibold px-2.5 py-1 sm:px-5 sm:py-2 rounded-full transition-all shadow-sm hover:shadow cursor-pointer whitespace-nowrap"
+                      className="inline-flex items-center justify-center bg-black text-white dark:bg-white dark:text-black hover:opacity-90 text-xs sm:text-sm font-semibold px-6 py-2.5 sm:px-7 sm:py-3 rounded-full transition-all shadow-md cursor-pointer whitespace-nowrap"
                     >
                       {item.buttonText}
                     </button>

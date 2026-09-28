@@ -15,7 +15,7 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
           
           {/* Left Text */}
           <div className="lg:col-span-5">
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-black dark:text-white mb-3 sm:mb-4">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-3 sm:mb-4">
               Meet DigiVolt
             </h2>
             <p className="text-xs sm:text-lg md:text-xl text-neutral-700 dark:text-gray-300 font-normal mb-6 sm:mb-8 leading-relaxed">
@@ -48,7 +48,7 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
           
           {/* Feature 1: Sustainability */}
           <div className="flex flex-col p-6 sm:p-8 rounded-2xl bg-neutral-50 dark:bg-neutral-950">
-            <h3 className="text-xl font-bold tracking-tight text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-2">
               100% Electric & Zero Emissions
             </h3>
             <p className="text-sm text-neutral-600 dark:text-neutral-300 font-light leading-relaxed">
@@ -58,7 +58,7 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
 
           {/* Feature 2: Smarter & Safer */}
           <div className="flex flex-col p-6 sm:p-8 rounded-2xl bg-neutral-50 dark:bg-neutral-950">
-            <h3 className="text-xl font-bold tracking-tight text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-2">
               Vetted Professional Drivers
             </h3>
             <p className="text-sm text-neutral-600 dark:text-neutral-300 font-light leading-relaxed">
@@ -68,7 +68,7 @@ export const HomeFeatures: React.FC<HomeFeaturesProps> = ({ onDownloadApp }) => 
 
           {/* Feature 3: Whisper-Quiet Sanctuary */}
           <div className="flex flex-col p-6 sm:p-8 rounded-2xl bg-neutral-50 dark:bg-neutral-950">
-            <h3 className="text-xl font-bold tracking-tight text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-2">
               Whisper-Quiet Sanctuary
             </h3>
             <p className="text-sm text-neutral-600 dark:text-neutral-300 font-light leading-relaxed">

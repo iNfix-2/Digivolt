@@ -359,7 +359,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 
                 {/* Column 1 (Left): Tab Title + DigiVolt Emblem */}
                 <div className="col-span-3 flex flex-col justify-between self-stretch">
-                  <h2 className="text-4xl sm:text-5xl font-light tracking-tight">
+                  <h2 className="text-4xl sm:text-5xl font-light tracking-tight text-[#00401A] dark:text-emerald-400">
                     {currentMenu.title}
                   </h2>
 

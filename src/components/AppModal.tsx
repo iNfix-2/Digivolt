@@ -48,7 +48,7 @@ export const AppModal: React.FC<AppModalProps> = ({ isOpen, onClose, darkMode = 
         </div>
 
         {/* Header write-up */}
-        <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-black dark:text-white mb-6">
+        <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#00401A] dark:text-emerald-400 mb-6">
           Get the DigiVolt App
         </h3>
 
